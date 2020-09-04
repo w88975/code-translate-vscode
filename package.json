@@ -3,6 +3,7 @@
   "displayName": "code-translate",
   "description": "code, variable... translate tool for vscode",
   "version": "0.0.1",
+  "publisher": "w88975",
   "engines": {
     "vscode": "^1.48.0"
   },
