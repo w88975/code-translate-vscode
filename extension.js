@@ -8,7 +8,6 @@ async function activate() {
 exports.activate = activate;
 
 function deactivate() {
-    translate.close()
 }
 
 module.exports = {

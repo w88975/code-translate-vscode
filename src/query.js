@@ -46,6 +46,7 @@ function query(word) {
                 if (word == lineWord.toLowerCase()) {
                     let csvArray = csvToArray(line)
                     resolve(csvArray[0][3])
+                    readSteam.destroy()
                     return objReadLine.close()
                 }
             }
