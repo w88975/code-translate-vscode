@@ -1,13 +1,21 @@
 const vscode = require('vscode');
-const CSVQuery = require('./query')
+const DICTQuery = require('./query')
+const formatter = require('./format')
 
+const markdownHeader = `翻译 \`$word\` :  
+`;
+const markdownFooter = `  
+`;
+const markdownLine = `  
+*****
+`;
 
 const genMarkdown = function (word, translation) {
     if (!translation) {
-        return `翻译 \`${word}\` :  
+        return `- [${word}](https://translate.google.com?text=${word}) :  
 本地词库暂无结果 , 查看[Google翻译](https://translate.google.com?text=${word})`
     }
-    return `翻译 \`${word}\` :  
+    return `- [${word}](https://translate.google.com?text=${word}) :  
 ${translation.replace(/\\n/g, `  
 `)}`;
 }
@@ -23,10 +31,20 @@ async function init() {
             if (selectText && word.indexOf(selectText) > -1) {
                 word = selectText
             }
-            word = word.replace(/"/g, "")
-            word = word.toLowerCase()
-            let ret = await CSVQuery(word)
-            let hoverText = genMarkdown(word, ret)
+            let originText = formatter.cleanWord(word)
+            let words = formatter.getWordArray(formatter.cleanWord(word))
+            let hoverText = ''
+            for (let i = 0; i < words.length; i++) {
+                let _w = words[i]
+                let ret = await DICTQuery(_w)
+                if (i == 0) {
+                    hoverText += genMarkdown(_w, ret)
+                } else {
+                    hoverText += markdownLine + genMarkdown(_w, ret)
+                }
+            }
+            const header = markdownHeader.replace('$word', originText)
+            hoverText = header + hoverText + markdownFooter
             return new vscode.Hover(hoverText)
         }
     })
