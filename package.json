@@ -2,7 +2,7 @@
   "name": "code-translate",
   "displayName": "code-translate",
   "description": "code, variable... translate tool for vscode",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "publisher": "w88975",
   "icon": "icon.png",
   "engines": {
