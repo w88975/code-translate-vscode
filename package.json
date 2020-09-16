@@ -1,8 +1,8 @@
 {
   "name": "code-translate",
   "displayName": "code-translate",
-  "description": "code, variable... translate tool for vscode",
-  "version": "1.0.8",
+  "description": "vscode悬浮翻译,滑词翻译工具",
+  "version": "1.0.10",
   "publisher": "w88975",
   "icon": "icon.png",
   "engines": {
