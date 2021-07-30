@@ -13,7 +13,7 @@ vscode 滑词 & 悬浮 翻译插件
 
 Github: [w88975/code-translate-vscode](https://github.com/w88975/code-translate-vscode) -->
 
-----
+<!-- ---- -->
 
 ## License
 
