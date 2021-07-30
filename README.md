@@ -9,9 +9,9 @@ vscode 滑词 & 悬浮 翻译插件
 
 ![screen_01.png](https://i.loli.net/2020/09/16/pI2YZ8BizbtDkQr.gif)
 
-## Source
+<!-- ## Source
 
-Github: [w88975/code-translate-vscode](https://github.com/w88975/code-translate-vscode)
+Github: [w88975/code-translate-vscode](https://github.com/w88975/code-translate-vscode) -->
 
 ----
 
