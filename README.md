@@ -1,20 +1,40 @@
-# code-translate
+# Code Translate for VS Code
 
 ## 简介
-vscode 滑词 & 悬浮 翻译插件
+
+Code Translate 是一款纯粹的滑词翻译软件
+
+1. 无侵入式的显示翻译结果: 与VS Code代码分析完美结合 
+
+2. 强大的单词拆分能力: 支持驼峰, 下划线形式等各种单词拆分
+
+3. 丰富的本地词库: 包含 340 万+离线单词, 支持各种生僻单词
+
+4. 基于丰富的本地词库: Code Translate 拥有超快的查询速度, 每个单词在基本在 10ms 内可查询完毕
+
+5. 多端支持: VS Code 桌面版 和 VS Code Online 版本, 插件均可支持
+
+---
 
 ## 预览
 
-悬浮翻译 选中单词翻译
+1. 鼠标悬停翻译:
 
-![screen_01.png](https://i.loli.net/2020/09/16/pI2YZ8BizbtDkQr.gif)
+![screen_01.png](assets/Snipaste_01.png)
 
-<!-- ## Source
+2. 自动拆分组合词:
 
-Github: [w88975/code-translate-vscode](https://github.com/w88975/code-translate-vscode) -->
+![screen_01.png](assets/Snipaste_02.png)
 
-<!-- ---- -->
+3. 自由框选单词:
 
+![screen_01.png](assets/Snipaste_03.png)
+
+4. 跳转第三方查询
+
+![screen_01.png](assets/Snipaste_04.png)
+
+---
 ## License
 
 MIT License
