@@ -10,12 +10,12 @@ const markdownLine = `
 *****
 `
 
-const genMarkdown = function (word, translation) {
-  if (!translation) {
+const genMarkdown = function (word, translation, p) {
+  if (!translation || !p) {
     return `- [${word}](https://translate.google.cn?text=${word}) :  
 本地词库暂无结果 , 查看 [Google翻译](https://translate.google.cn?text=${word}) [百度翻译](https://fanyi.baidu.com/#en/zh/${word})`
   }
-  return `- [${word}](https://translate.google.cn?text=${word}) :  
+  return `- [${word}](https://translate.google.cn?text=${word}) ${p ? '*/' + p + '/*' : ''}:  
 ${translation.replace(/\\n/g, `  
 `)}`
 }
@@ -37,10 +37,11 @@ async function init() {
       for (let i = 0; i < words.length; i++) {
         let _w = words[i]
         let ret = await DICTQuery(_w)
+        console.log('ret:', _w, ret)
         if (i == 0) {
-          hoverText += genMarkdown(_w, ret)
+          hoverText += genMarkdown(_w, ret.w, ret.p)
         } else {
-          hoverText += markdownLine + genMarkdown(_w, ret)
+          hoverText += markdownLine + genMarkdown(_w, ret.w, ret.p)
         }
       }
       const header = markdownHeader.replace('$word', originText)

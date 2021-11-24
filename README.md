@@ -18,21 +18,14 @@ Code Translate 是一款纯粹的滑词翻译软件
 
 ## 预览
 
-1. 鼠标悬停翻译:
-
-![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_01.png?raw=true)
-
-2. 自动拆分组合词:
-
-![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_02.png?raw=true)
-
-3. 自由框选单词:
-
-![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_03.png?raw=true)
-
-4. 跳转第三方查询
-
-![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_04.png?raw=true)
+- 1. 鼠标悬停翻译:
+  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_01.png?raw=true)
+- 2. 自动拆分组合词:
+  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_02.png?raw=true)
+- 3. 自由框选单词:
+  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_03.png?raw=true)
+- 4. 跳转第三方查询
+  ![screen_01.png](https://github.com/w88975/code-translate-vscode/blob/master/assets/Snipaste_04.png?raw=true)
 
 ---
 ## License

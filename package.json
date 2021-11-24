@@ -3,6 +3,8 @@
   "displayName": "Code Translate",
   "description": "A pure vscode translation plug-in; 一款纯粹的 vscode 滑词翻译插件",
   "keywords": [
+    "翻译",
+    "滑词翻译",
     "translate",
     "translation",
     "code-translation",
@@ -10,7 +12,7 @@
     "code-translate",
     "code translate"
   ],
-  "version": "1.0.16",
+  "version": "1.0.18",
   "publisher": "w88975",
   "icon": "icon.png",
   "engines": {
