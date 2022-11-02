@@ -12,10 +12,10 @@ const markdownLine = `
 
 const genMarkdown = function (word, translation, p) {
   if (!translation && !p) {
-    return `- [${word}](https://translate.google.cn?text=${word}) :  
-本地词库暂无结果 , 查看 [Google翻译](https://translate.google.cn?text=${word}) [百度翻译](https://fanyi.baidu.com/#en/zh/${word})`
+    return `- [${word}](https://translate.google.com?text=${word}) :  
+本地词库暂无结果 , 查看 [Google翻译](https://translate.google.com?text=${word}) [百度翻译](https://fanyi.baidu.com/#en/zh/${word})`
   }
-  return `- [${word}](https://translate.google.cn?text=${word}) ${p ? '*/' + p + '/*' : ''}:  
+  return `- [${word}](https://translate.google.com?text=${word}) ${p ? '*/' + p + '/*' : ''}:  
 ${translation.replace(/\\n/g, `  
 `)}`
 }
