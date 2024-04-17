@@ -1,5 +1,10 @@
 # Code Translate for VS Code
-
+[![Version](https://img.shields.io/visual-studio-marketplace/v/w88975.code-translate?style=flat-square&logo=visual-studio-code)](https://marketplace.visualstudio.com/items?itemName=w88975.code-translate)
+![Installs](https://img.shields.io/visual-studio-marketplace/i/w88975.code-translate?style=flat-square)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/w88975.code-translate?style=flat-square)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/w88975.code-translate?style=flat-square)
+![GitHub Repo stars](https://img.shields.io/github/stars/w88975/code-translate-vscode?style=flat-square&logo=github)
+[![The MIT License](https://img.shields.io/badge/license-MIT-orange.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 ## 简介
 
 Code Translate 是一款纯粹的滑词翻译软件
